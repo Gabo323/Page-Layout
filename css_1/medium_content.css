@@ -1,0 +1,104 @@
+.medium_content{
+  grid-area: "5";
+  background-color: white;
+  display: grid;
+  grid-template-areas: "j k";
+  grid-template-columns: 8fr 4fr;
+  grid-template-rows: auto;
+}
+.left{
+  grid-area: "j";
+  margin: 50px 50px 50px 50px;
+  padding: 25px;
+  background-color: #e2edff;
+  border-radius: 10px;
+  border: 1px solid #91bbff;
+  box-shadow: 1px 1px 1px 1px #888888;
+  position: relative;
+}
+.left:hover{
+  box-shadow: 3px 3px 3px 3px  #888888;
+  bottom: 2px;
+  right: 2px;
+  cursor: pointer;
+}
+.right{
+  grid-area: "k";
+  margin-left: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-areas: "x" "y";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+.upper{
+  grid-area: "x";
+  background-color: #e2edff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #91bbff;
+  box-shadow: 1px 1px 1px 1px #888888;
+  position: relative;
+}
+.downer{
+  grid-area: "y";
+  background-color: #e2edff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #91bbff;
+  box-shadow: 1px 1px 1px 1px #888888;
+  position: relative;
+}
+.upper:hover{
+  box-shadow: 3px 3px 3px 3px  #888888;
+  bottom: 2px;
+  right: 2px;
+  cursor: pointer;
+}
+.downer:hover{
+  box-shadow: 3px 3px 3px 3px  #888888;
+  bottom: 2px;
+  right: 2px;
+  cursor: pointer;
+}
+@media all and (max-width:1200px) {
+  .medium_content{
+    grid-template-areas: "j" "k";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .left{
+    margin:20px 50px 10px 50px;
+  }
+  .right{
+    grid-template-areas: "x y";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin:10px;
+  }
+}
+@media all and (max-width: 760px) {
+  .right{
+    grid-template-areas: "x" "y";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    margin:25px;
+  }
+}
+@media all and (max-width: 660px) {
+  .left_Photo{
+    margin-left: 5px;
+    float: left;
+    width: 200px;
+    height: 150px;
+  }
+}
+.zarovnat{
+  text-align: justify;
+}
+.left_Photo{
+  float:right;
+  margin-left: 25px;
+}

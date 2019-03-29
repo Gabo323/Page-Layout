@@ -1,0 +1,19 @@
+.footer{
+  color: white;
+  background-color: #2A3132;
+  position: relative;
+  bottom: 0px;
+  height: auto;
+  padding: 15px;
+}
+.nwm{
+  border-right: 1px solid white;
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+.nwm_mid{
+  border-left: 1px solid white;
+  display: inline;
+  padding: 0px 10px 0px 10px;
+  float: right;
+}

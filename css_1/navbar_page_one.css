@@ -1,0 +1,37 @@
+.nav_bar{
+  grid-area: "2";
+  background-color: #2A3132;
+  border-radius: 10px 10px 0px 0px;
+}
+.nav_bar a{
+  color: white;
+}
+.nav_bar li{
+padding: 2.5px;
+}
+.nav_stuff {
+  padding: 2.5px;
+}
+.nav_stuff:hover{
+  background-color: #3d5272;
+  border-radius: 10px;
+}
+.nice{
+  border-radius: 10px;
+  color:white;
+}
+.nice:hover{
+  background-color: green;
+}
+.on-focus{
+  width: 85px;
+  transition: width .35s ease-in-out;
+}
+.on-focus:focus{
+  width: 250px;
+}
+@media all and (max-width:600px) {
+  .on-focus:focus{
+    width: 100px;
+  }
+}

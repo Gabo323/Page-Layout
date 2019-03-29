@@ -1,0 +1,61 @@
+body{
+  margin: 0;
+  overflow-x: hidden;
+}
+@media all and (max-width:700px) {
+  body{
+    font-size: 13px;
+  }
+}
+.layout{
+  display: grid;
+  grid-template-areas: "1" "2" "3" "4" "5";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background-color: #90AFC5;
+}
+
+.first{
+  grid-area: "1";
+  background-color: #90AFC5;
+}
+.first > h1{
+  padding: 10px 100px;
+}
+.dot{
+  animation: one_dot 3s infinite;
+}
+.second_dot{
+  animation: second_dot 3s infinite;
+}
+.third_dot{
+  animation: third_dot 3s infinite;
+}
+@keyframes one_dot {
+  0%{opacity: 1;}
+  0.025%{opacity: 0;}
+  50%{opacity: 1;}
+  50.025%{opacity: 0;}
+}
+@keyframes second_dot {
+  10%{opacity: 1;}
+  10.025%{opacity: 0;}
+  60%{opacity: 1;}
+  60.025%{opacity: 0;}
+}
+@keyframes third_dot {
+  20%{opacity: 1;}
+  20.025%{opacity: 0;}
+  70%{opacity: 1;}
+  70.025%{opacity: 0;}
+}
+
+
+.big_content{
+  grid-area: "3";
+  padding: 50px 100px;
+  background-color: white;
+}
+.big_content a{
+  color: #336B87;
+}
